@@ -8,6 +8,7 @@ export default function Contacts({navigation,route}){
         <View style={{flex:1, alignItems:'center',justifyContent:'center'}}> 
         <Text style={{marginBottom:10}}> Estamos en contactenos</Text>
         <Text>Titulo:{title}</Text>
+        <Text>Formulario:</Text>
         <Text>Nombre Completo: {name}</Text>
         <Button title='Ir a inicio' onPress={()=>{navigation.navigate('Home')}}/>
         </View>

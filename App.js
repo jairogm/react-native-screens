@@ -2,6 +2,7 @@ import { StyleSheet, Text, View,Button } from 'react-native';
 import {NavigationContainer} from '@react-navigation/native'
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Contacts from './screens/Contacts';
+import Loguin from './screens/loguin';
 
 
 //crear constante para generar las rutas de las pantallas(screens)
@@ -10,10 +11,10 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName='Home'>
-         <Stack.Screen name="Products" component={ProductsScreen} options={{title:'Productos'}}/>
+        <Stack.Screen name="Products" component={ProductsScreen} options={{title:'Productos'}}/>
         <Stack.Screen name="Home" component={HomeScreen} options={{title:'Inicio'}}/>
-        <Stack.Screen name="Contacts" component={Contacts} options={{title:'Contactos0'}}/>
-      
+        <Stack.Screen name="Contacts" component={Contacts} options=      {{title:'Contactanos'}}/>
+        <Stack.Screen name='Loguin'component={Loguin} options={{title:'Loguin'}}/>
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -27,7 +28,12 @@ function HomeScreen({navigation}){
       onPress={() =>{
       navigation.navigate('Products')
       }}
-
+      />
+      <Button
+      title="Registrate"
+      onPress={() =>{
+      navigation.navigate('Loguin')
+      }}
       />
 
     </View>
