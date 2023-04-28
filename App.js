@@ -44,10 +44,7 @@ export default function App() {
 function HomeScreen({navigation}){
   return(
     <View style={styles.container}>
-      <Image
-        style = {styles.imgstyle}
-        source={require('./assets/Arriba.svg')}
-      />
+
         <Text style={{marginBottom:20,fontWeight:"bold",fontSize:20}}>INGRESA LOS DATOS DEL USUARIO</Text>
             <TextInput
               label="Nombre:"
