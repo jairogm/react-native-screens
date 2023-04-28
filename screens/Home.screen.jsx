@@ -41,7 +41,7 @@ const HomeScreen = ({ navigation }) => {
             setErrormsg("");
             setEmail("");
             setPassword("");
-            navigation.navigate("ContactScreen", { name, email });
+            navigation.navigate("Contacts", { name, email });
           } else {
             setErrormsg("Correo y/o contraseña es incorrecto");
           }

@@ -36,16 +36,7 @@ export default function App() {
           component={HomeTabs}
           options={{ title: "" }}
         />
-            <Stack.Screen
-          name="HomeScreen"
-          component={HomeScreen}
-          options={{ title: "" }}
-        />
-            <Stack.Screen
-          name="ContactScreen"
-          component={ContactScreen}
-          options={{ title: "" }}
-        />
+
       </Stack.Navigator>
     </NavigationContainer>
   );
@@ -67,20 +58,20 @@ function HomeTabs() {
       }}
     >
       <Tab.Screen
-        name="Home"
+        name="Home" // !tHIS IS THE NAME OF THE ROUTE , WHEN USING NAVIGATION.NAVIGATE USE THIS
         component={HomeScreen}
         options={{
           tabBarStyle:{display:'none'},
           tabBarIcon: (tabInfo) => <MaterialIcons name="home" size={22} />,
         }}
-      />
+        />
       <Tab.Screen
         name="Products"
         component={ProductsScreen}
         options={{
           tabBarIcon: (tabInfo) => <MaterialIcons name="category" size={22} />,
         }}
-      />
+        />
       <Tab.Screen
         name="Contacts"
         component={ContactScreen}
